@@ -1,11 +1,15 @@
+@font-face { font-family: Delicious; src: url('../resources/FiraCode-Regular.otf'); } 
+@font-face { font-family: Delicious; font-weight: Regular; src: url('../resources/FiraCode-Regular.otf');}
 body{
+    font-family: "Fira Code";
     text-align: center;
     justify-content: center;
     box-sizing: content-box;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 30s ease infinite;
 	height: 100vh;
+    display: grid;
 }
 @keyframes gradient {
 	0% {
@@ -18,32 +22,38 @@ body{
 		background-position: 0% 50%;
 	}
 }
-
 .main{
-    justify-content: center;
-    text-align: center;
     padding-left: 20%;
     padding-right: 20%;
-    border-radius: 20px;
+    border-radius: 10px; 
 }
 .bodybg{
-    background-color: rgba(20, 20, 20, 0.40);
+    background-color: rgb(59, 59, 59, 0.4);
     border-style: solid;
-    border-width: 1%;
-    border-color: rgba(255, 113, 47, 0.4);
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
     border-radius: 10px;
     justify-content: center;
     box-sizing: content-box;
 
 }
+.text{
+    text-align: justify;
+    text-justify: inter-word;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 2px 2px #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000;
+}
 input{
     color: red;
 }
 p{
-    color: red;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    color: white;
 }
 img {
-    width: 50%;
+    width: 30%;
     border: solid;
     border-radius: 1000px;
     height: auto;
